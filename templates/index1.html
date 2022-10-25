@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>{{hostname}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="/static/w3.css"> -->
+<link rel="stylesheet" href="w3.css">
+
+
+<body>
+
+<div class="w3-container w3-light-blue w3-round w3-margin w3-centered" id="heading">
+ <h1>EU {{host_name}}</h1>
+ <hr>
+ <h2>{{ip_address}}</h2>
+</div>
+
+<div class="w3-container w3-light-blue w3-light-blue w3-round w3-padding w3-margin s3-centered" id="input-output">
+
+<form class="w3-container">
+<label>User Input</label> 
+<input class="w3-input w3-round" type="text" id="input">
+<label>System Response</label>
+<input class="w3-input w3-round" type="text" id="output" disabled>
+
+</form>
+
+</div>
+
+<div class="w3-container w3-light-blue w3-centered w3-margin w3-padding w3-round">
+<div class="w3-container w3-centered">
+  
+  <table class="w3-table w3-responsive w3-large w3-centered" id="keypad_matrix">
+    <tr>
+	  <td><button class="w3-button w3-black w3-round" id="b1">1</button></td>
+      <td><button class="w3-button w3-black w3-round" id="b2">2</button></td>
+	  <td><button class="w3-button w3-black w3-round" id="b3">3</button></td>
+	  <td><button class="w3-button w3-black w3-round" id="A">A</button></td>
+    </tr>
+	<tr>
+	  <td><button class="w3-button w3-black w3-round" id="b4">4</button></td>
+      <td><button class="w3-button w3-black w3-round" id="b5">5</button></td>
+	  <td><button class="w3-button w3-black w3-round" id="b6">6</button></td>
+	  <td><button class="w3-button w3-black w3-round" id="B">B</button></td>
+    </tr>
+	<tr>
+	  <td><button class="w3-button w3-black w3-round" id="b7">7</button></td>
+      <td><button class="w3-button w3-black w3-round" id="b8">8</button></td>
+	  <td><button class="w3-button w3-black w3-round" id="b9">9</button></td>
+	  <td><button class="w3-button w3-black w3-round" id="C">C</button></td>
+    </tr>
+	<tr>
+	  <td><button class="w3-button w3-black w3-round" id="b*">*</button></td>
+      <td><button class="w3-button w3-black w3-round" id="b0">0</button></td>
+	  <td><button class="w3-button w3-black w3-round" id="b#">#</button></td>
+	  <td><button class="w3-button w3-black w3-round" id="D">D</button></td>
+    </tr>
+  
+  </table>
+</div>
+</div>
+
+<div class="w3-container w3-light-blue w3-margin w3-padding w3-centered w3-round" >
+ <div class="w3-container">
+ <table class="w3-table w3-responsive w3-large" id="buttons">
+ <tr>
+	<td><button class="w3-button w3-black w3-round">REGISTER NEW USER<td>
+ <tr>
+ </table>
+ </div>
+</div>
+
+</body>
+
+</html>

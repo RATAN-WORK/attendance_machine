@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+	<link rel= "stylesheet" href ='/static/style.css'/>
+	</head>
+	<body>
+		<h2> REGISTRATION LOG </h2>
+		<table border = 1>
+			<th>DEVICE ID</th>
+			<th>TIME STAMP</th>
+			<th>INDEX ID </th>
+			<th>PUNCH ID </th>
+			 {% for row in reg_log %}
+				<tr>
+					{% for c in row %}
+						<td> {{c}} </td>
+					{% endfor %}
+				</tr>
+			 {% endfor %}
+		</table>
+	</body>
+</html>

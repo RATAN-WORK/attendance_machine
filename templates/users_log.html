@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+	<!-- <link rel= "stylesheet" href ='/static/style.css'/> -->
+	<link href ="/static/bootstrap.min.css" rel="stylesheet" media ="screen">
+	<script src = "/static/bootstrap.min.js">
+	</script>
+	</head>
+	<body>
+		<div class ="container">
+			<br>
+			<h2> Attendance Logs </h2>
+			<br>
+			<table border = 1>
+				<th>Device ID</th>
+				<th>Time Stamp</th>
+				<th>Index ID</th>
+				<th>Punch ID </th>
+				<th>Server1</th>
+				<th>Server2</th>
+				<th>Test Server</th>
+				<th>Image</th>
+				 {% for row in users_log %}
+					<tr>
+						{% for c in row %}
+							<td> {{c}} </td>
+						{% endfor %}
+					</tr>
+				 {% endfor %}
+			</table>
+		</div>
+	</body>
+</html>

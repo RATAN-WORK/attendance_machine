@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>USER REGISTRATION</title>
+		<meta name = "viewport" content="width=device-width, initial-scale=1.0"> </meta>
+		<link href="static/bootstrap.min.css" rel ="stylesheet" media="screen">
+	</head>
+	
+	<body>
+		
+		<div class="container-fluid">
+		<br>
+		<h1>USER REGISTRATION </h1>
+		<hr>
+			<form action="" method="post">
+				<div class="form-group">
+					<label for="index">Index No(Optional)</lable>
+					<input class ="form-control input-sm" name="index" type ="text">
+					<label for="index-help">
+					<li>If provided: then it will replace the existing user with given index name</li>
+					<li>If not provided: then it will add a new user in existing database</li>
+					</label>
+				</div>
+				
+				<div class="form-group">
+				  <label for="pwd">Password:</label>
+				  <input type="password" class="form-control" name="pwd">
+				</div>
+				
+				<div class="form-group">
+					<label for ="punch_id">Punch Id</label>
+					<input class="form-control input-sm" name= "punch_id" type="text">
+				</div>
+				
+				<div class="form-group">
+					<label for ="template">Template</label>
+					<textarea class="form-control " rows="3" name= "template" type="text"></textarea>
+				</div>
+				
+				<div class ="form-group">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+				
+			</form>
+			<p>
+				<h3>{{response}}</h3>
+			</p>
+			
+		</div>
+	</body>
+</html>
